@@ -22,7 +22,9 @@ DEVICE_PATH := device/yu/jalebi
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # Assertions
+ADD_RADIO_FILES ?= true
 TARGET_BOARD_INFO_FILE := device/yu/jalebi/board-info.txt
+TARGET_RELEASETOOLS_EXTENSIONS := device/yu/jalebi
 
 # Kernel
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100

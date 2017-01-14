@@ -15,6 +15,8 @@
 #
 
 $(call inherit-product-if-exists, vendor/yu/jalebi/jalebi-vendor.mk)
+$(call inherit-product-if-exists, vendor/volte/volte.mk)
+$(call inherit-product-if-exists, vendor/volte/jalebi/jalebi-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
