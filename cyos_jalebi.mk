@@ -22,7 +22,17 @@ $(call inherit-product, device/yu/jalebi/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := jalebi
-PRODUCT_NAME := full_jalebi
+PRODUCT_NAME := cyos_jalebi
 PRODUCT_BRAND := YU
+BOARD_VENDOR := yu
 PRODUCT_MODEL := YU4711
 PRODUCT_MANUFACTURER := YU
+
+# Must define platform variant before including any common things
+TARGET_BOARD_PLATFORM_VARIANT := msm8916
+
+PRODUCT_GMS_CLIENTID_BASE := android-micromax
+
+TARGET_VENDOR_PRODUCT_NAME := YUNIQUE
+TARGET_VENDOR_DEVICE_NAME := YUNIQUE
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUNIQUE PRODUCT_NAME=YUNIQUE
